@@ -23,6 +23,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import PropTypes from 'prop-types';
 import '../assets/index.css';
 import { formatDistance } from 'date-fns';
+import TopProject from './top-project';
 
 const GitProfile = ({ config }) => {
   const [error, setError] = useState(
@@ -53,7 +54,6 @@ const GitProfile = ({ config }) => {
       .get(`https://api.github.com/users/${sanitizedConfig.github.username}`)
       .then((response) => {
         let data = response.data;
-        console.log(data);
         let profileData = {
           avatar: data.avatar_url,
           name: data.name ? data.name : '',
@@ -178,6 +178,10 @@ const GitProfile = ({ config }) => {
                   </div>
                   <div className="lg:col-span-2 col-span-1">
                     <div className="grid grid-cols-1 gap-6">
+                      <TopProject
+                        projects={sanitizedConfig.projects}
+                        loading={loading}
+                      />
                       <Project
                         repo={repo}
                         loading={loading}
@@ -263,6 +267,13 @@ GitProfile.propTypes = {
         degree: PropTypes.string,
         from: PropTypes.string,
         to: PropTypes.string,
+      })
+    ),
+    projects: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string,
+        description: PropTypes.string,
+        url: PropTypes.string,
       })
     ),
     blog: PropTypes.shape({

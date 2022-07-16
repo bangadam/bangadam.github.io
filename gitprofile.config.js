@@ -32,7 +32,7 @@ const config = {
     dribbble: '',
     behance: '',
     medium: 'bangadam-dev',
-    dev: 'aribangadam.dev',
+    dev: 'bangadam.dev',
     website: 'https://bangadam.github.io',
     phone: '',
     email: 'bangadam.dev@gmail.com',
@@ -106,6 +106,32 @@ const config = {
       degree: 'Bachelor of Computer Science',
       from: '2018',
       to: 'present',
+    },
+  ],
+  projects: [
+    {
+      name: 'Pasarin.id',
+      url: 'https://pasarin.co.id/',
+      description:
+        'Building a service API for the Marketplace website "pasarin.id", besides that I contribute to building APIs for product services, transaction services, back-office services, chat services, third-party API integration such as Gosend, JNE & JNT, elastic search integration, and setting API gateway using KONG.',
+    },
+    {
+      name: 'Ayopppk',
+      url: 'https://ayopppk.com',
+      description:
+        'Ayoppk is a platform to learn about preparation for PPPK official work, here I help create APIs, design website administrators and also process online exams.',
+    },
+    {
+      name: 'Rumah Pekerja Indonesia',
+      url: 'https://rumahpekerja.id',
+      description:
+        'I contributed in developing REST API, layouting design to html, integrating Finpay Emoney payments in the transaction process..',
+    },
+    {
+      name: 'kkuljaemkorean',
+      url: 'https://kkuljaemkorean.com',
+      description:
+        'kkuljaemkorean is a website-based Korean language learning platform, here I help in the integration of the API that has been made by the Backend team',
     },
   ],
   // Display blog posts from your medium or dev account. (Optional)

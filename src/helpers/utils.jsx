@@ -236,6 +236,7 @@ export const sanitizeConfig = (config) => {
     experiences:
       typeof config.experiences !== 'undefined' ? config.experiences : [],
     education: typeof config.education !== 'undefined' ? config.education : [],
+    projects: typeof config.projects !== 'undefined' ? config.projects : [],
     blog: {
       source:
         typeof config.blog !== 'undefined' &&
