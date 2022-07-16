@@ -2,93 +2,128 @@
 
 const config = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (Required)
-    sortBy: 'stars', // stars | updated
-    limit: 10, // How many projects to display.
+    username: 'bangadam', // Your GitHub org/user name. (Required)
+    sortBy: 'updated', // stars | updated
+    limit: 6, // How many projects to display.
     exclude: {
       forks: false, // Forked projects will not be displayed if set to true.
-      projects: [], // These projects will not be displayed. example: ['my-project1', 'my-project2']
+      projects: [
+        'BelajarJava',
+        'rest-api-lumen',
+        'spk-smart-topsis',
+        'bangadam.github.io',
+        'bangadam',
+        'quotes',
+        'journey-go',
+        'go-api-todo',
+        'laravel-masjid-GIS',
+        'LaraMesmo',
+        'Movie-Catalogue',
+        'laravel-anonymous-chat',
+        'Create-Solana-NFT-Collection',
+      ], // These projects will not be displayed. example: ['my-project1', 'my-project2']
     },
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    facebook: '',
-    instagram: '',
+    linkedin: 'bangadam',
+    twitter: 'bangadam_dev',
+    facebook: 'bangadam.dev',
+    instagram: 'bangadam.dev',
     dribbble: '',
     behance: '',
-    medium: '',
-    dev: 'arifszn',
-    website: 'https://arifszn.github.io',
+    medium: 'bangadam-dev',
+    dev: 'aribangadam.dev',
+    website: 'https://bangadam.github.io',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'bangadam.dev@gmail.com',
   },
   skills: [
     'PHP',
+    'Golang',
+    'Fiber',
+    'Echo',
     'Laravel',
     'JavaScript',
-    'React.js',
     'Node.js',
-    'Nest.js',
+    'Jquery',
     'MySQL',
+    'PostgreSQL',
+    'Elasticsearch',
     'Git',
     'Docker',
-    'PHPUnit',
+    'Unit Testing',
     'CSS',
-    'Antd',
     'Tailwind',
     'Bootstrap',
   ],
   experiences: [
     {
-      company: 'Monstarlab Bangladesh',
-      position: 'Backend Engineer II',
-      from: 'September 2021',
+      company: 'Develious',
+      position: 'Backend Engineer',
+      from: 'May 2022',
       to: 'Present',
     },
     {
-      company: 'My Offer 360 Degree',
-      position: 'Web Application Developer',
-      from: 'July 2019',
-      to: 'August 2021',
+      company: 'PT KB Finansia Multi Finance',
+      position: 'Golang Developer',
+      from: 'May 2022',
+      to: 'Present',
+    },
+    {
+      company: 'PT. Sekar Tekno Kreatif (esteh.id)',
+      position: 'Fullstack Developer',
+      from: 'December 2021',
+      to: 'March 2022',
+    },
+    {
+      company: 'PT. Datamax Technology Indonesia',
+      position: 'Backend Engineer',
+      from: 'April 2021',
+      to: 'December 2022',
+    },
+    {
+      company: 'PT. Ergossum Sukses Makmur',
+      position: 'Fullstack Developer',
+      from: 'August 2020',
+      to: 'February 2021',
+    },
+    {
+      company: 'PTIPD Maulana Malik Ibrahim State Islamic University Malang',
+      position: 'Fullstack Developer',
+      from: 'January 2020',
+      to: 'June 2020',
+    },
+    {
+      company: 'PT. Easytech IT Solution',
+      position: 'Fullstack Developer',
+      from: 'July 2017',
+      to: 'August 2018',
     },
   ],
   education: [
     {
-      institution: 'American International University-Bangladesh',
-      degree: 'Bachelor of Science',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Cantonment College, Jessore',
-      degree: 'Higher Secondary Certificate (HSC)',
-      from: '2012',
-      to: '2014',
-    },
-    {
-      institution: 'Chowgacha Shahadat Pilot High School',
-      degree: 'Secondary School Certificate (SSC)',
-      from: '2007',
-      to: '2012',
+      institution: 'Maulana Malik Ibrahim State Islamic University Malang',
+      degree: 'Bachelor of Computer Science',
+      from: '2018',
+      to: 'present',
     },
   ],
   // Display blog posts from your medium or dev account. (Optional)
   blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn',
-    limit: 3, // How many posts to display. Max is 10.
+    source: 'medium', // medium | dev
+    username: 'bangadam-dev',
+    limit: 5, // How many posts to display. Max is 10.
   },
   googleAnalytics: {
     // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-    id: 'G-WLLB5E14M6', // Please remove this and use your own tag id or keep it empty
+    id: '', // Please remove this and use your own tag id or keep it empty
   },
   hotjar: {
-    id: '2617601', //  Please remove this and use your own id or keep it empty
+    id: '', //  Please remove this and use your own id or keep it empty
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'corporate',
+    defaultTheme: 'ligth',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -99,38 +134,7 @@ const config = {
     respectPrefersColorScheme: false,
 
     // Available themes. To remove any theme, exclude from here.
-    themes: [
-      'light',
-      'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
-      'procyon',
-    ],
+    themes: ['light', 'dark'],
 
     // Custom theme
     customTheme: {
